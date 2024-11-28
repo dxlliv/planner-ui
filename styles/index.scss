@@ -1,12 +1,8 @@
-@use "./settings";
-@use "./variables" as *;
-
-// ui
 @use "./partials";
 
 html {
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.3;
 
   @media(max-width: 320px) {
     -ms-overflow-style: none;
