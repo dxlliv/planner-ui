@@ -1,0 +1,11 @@
+{
+  "name": "planner-ui",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "devDependencies": {
+    "nuxt": "^3.11.2",
+    "typescript": "^5.4.5"
+  }
+}
