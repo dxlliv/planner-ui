@@ -1,11 +1,14 @@
 <script setup lang="ts">
-
+defineProps<{
+  displayName?: string
+}>()
 </script>
 
 <template>
   <div
     class="app-profile__display-name"
   >
+    <div v-if="displayName" v-text="displayName" />
     <slot />
   </div>
 </template>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
+    username?: string
     size?: string
   }>(),
   {
@@ -17,6 +18,8 @@ withDefaults(
       { 'font-weight-bold text-subtitle-1': size === 'large' },
     ]"
   >
+    <div v-if="username" v-text="username" />
+
     <slot />
   </div>
 </template>
