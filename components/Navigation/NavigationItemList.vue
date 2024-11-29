@@ -40,9 +40,27 @@ defineProps<{
       height: 28px;
     }
 
+    i {
+      margin: 0 auto;
+      font-size: 32px;
+      opacity: 1;
+    }
+
     .v-avatar {
       margin: 0 auto;
       border-width: 2px !important;
+    }
+  }
+
+  // overlay
+
+  :deep(.v-list-item__overlay) {
+    opacity: 0;
+  }
+
+  &:hover {
+    :deep(.v-list-item__overlay) {
+      opacity: calc(var(--v-activated-opacity)* var(--v-theme-overlay-multiplier) * 0.5);
     }
   }
 
