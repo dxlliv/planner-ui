@@ -1,9 +1,12 @@
 <script setup lang="ts">
-
+defineProps<{
+  description?: string
+}>()
 </script>
 
 <template>
   <div class="app-profile__biography">
+    <div v-if="description" v-html="description" />
     <slot />
   </div>
 </template>
