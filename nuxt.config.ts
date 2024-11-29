@@ -21,6 +21,6 @@ export default defineNuxtConfig({
     "ui": resolve(__dirname, ".")
   },
   imports: {
-    dirs: ["composables", "utils"]
+    dirs: ["components", "composables", "utils"]
   }
 })
