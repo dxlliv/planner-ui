@@ -22,5 +22,18 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ["components", "composables", "utils"]
-  }
+  },
+  modules: [
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    compilation: {
+      strictMessage: false,
+    },
+    lazy: true,
+    langDir: './locales',
+    locales: [
+      {title: 'English', code: 'en', file: 'en/index.ts'},
+    ],
+  },
 })
