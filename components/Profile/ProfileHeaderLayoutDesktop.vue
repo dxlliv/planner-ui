@@ -21,6 +21,7 @@
           <slot name="stats" />
         </div>
 
+        <slot name="display-name" />
         <slot name="description" />
       </v-col>
     </v-row>

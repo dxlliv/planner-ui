@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <v-list-item :title="title">
+  <v-list-item :title="title" :min-height="56">
     <template #prepend>
       <slot name="icon" />
     </template>
@@ -15,7 +15,6 @@ defineProps<{
 <style scoped lang="scss">
 .v-list-item {
   cursor: pointer;
-  min-height: 56px;
 
   :deep(.v-list-item-title) {
     font-size: 23px;
@@ -36,20 +35,9 @@ defineProps<{
     margin-right: 12px;
 
     svg {
-      display: inline-block;
-      zoom: 1.2;
       margin: 0 auto;
-    }
-
-    .v-icon {
-      display: inline-block;
-      opacity: 1;
-      margin: 0 auto;
-
-      &.mdi-content-save-outline {
-        font-size: 33px;
-        top: -3px;
-      }
+      width: 28px;
+      height: 28px;
     }
 
     .v-avatar {
@@ -59,20 +47,12 @@ defineProps<{
   }
 
   &.v-theme--light {
-    :deep(svg) {
-      fill: black;
-    }
-
     :deep(.v-avatar) {
       border-color: black;
     }
   }
 
   &.v-theme--dark {
-    :deep(svg) {
-      fill: white;
-    }
-
     :deep(.v-avatar) {
       border-color: white;
     }
