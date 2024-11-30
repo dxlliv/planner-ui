@@ -9,6 +9,8 @@ defineProps<{
     <template #prepend>
       <slot name="icon" />
     </template>
+
+    <slot />
   </v-list-item>
 </template>
 

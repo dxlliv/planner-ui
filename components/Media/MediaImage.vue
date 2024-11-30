@@ -7,6 +7,7 @@ defineProps<{
 <template>
   <v-img
     cover height="100%"
+    :aspect-ratio="1"
     :src="src"
   />
 </template>
