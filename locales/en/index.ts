@@ -73,7 +73,9 @@ export default {
     post: {
       comment: {
         add: "Add a comment...",
-        empty: "No comments here."
+        list: {
+          empty: "No comments here.",
+        }
       }
     },
     media: {
