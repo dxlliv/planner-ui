@@ -6,7 +6,7 @@
   <div class="app-profile__header px-2 px-sm-0">
     <div class="app-profile__header__top py-2">
       <v-row>
-        <v-col class="flex-grow-1" align-self="center">
+        <v-col class="flex-grow-1 pb-2" align-self="center">
 
           <slot name="back-button" />
           <slot name="username" />
@@ -39,7 +39,7 @@
       <slot name="description" />
     </div>
 
-    <div>
+    <div class="mb-3">
       <slot name="actions" />
     </div>
   </div>

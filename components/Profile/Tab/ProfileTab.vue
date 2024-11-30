@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const emit = defineEmits(["select"])
 
-const props = defineProps<{
+defineProps<{
   tab: any
   active: boolean
 }>()
@@ -10,16 +10,17 @@ const props = defineProps<{
 <template>
   <div
     :class="[
-      'app-profile-tab py-4',
+      'app-profile-tab py-2 py-md-4',
       {
         'app-profile-tab--active': active,
       },
     ]"
     @click="emit('select', tab)"
   >
-    <v-icon :size="15">
-      {{ tab.icon }}
-    </v-icon>
+    <component
+      :is="tab.icon.component"
+      :icon="tab.icon.name"
+    />
 
     <span v-text="tab.label" />
   </div>
