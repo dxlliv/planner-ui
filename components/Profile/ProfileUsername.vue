@@ -29,7 +29,7 @@ withDefaults(
   position: relative;
 
   &.text-subtitle-1 {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
 
   :deep(a) {

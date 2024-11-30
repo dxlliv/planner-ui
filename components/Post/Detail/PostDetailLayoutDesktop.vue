@@ -45,7 +45,7 @@ defineProps<{
   &__interactions {
     display: grid;
     min-height: calc(100% - 2px);
-    grid-auto-rows: 64px auto 118px 56px;
+    grid-auto-rows: 64px auto 119px 56px;
   }
 }
 </style>
