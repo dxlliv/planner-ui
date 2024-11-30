@@ -20,10 +20,6 @@ withDefaults(
 <style scoped lang="scss">
 .app-logo {
   display: inline-block;
-  font-family: "Tektur", serif;
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: 2px;
   text-decoration: none;
   color: inherit;
 
