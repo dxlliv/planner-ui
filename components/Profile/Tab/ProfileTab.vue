@@ -52,7 +52,7 @@ defineProps<{
 
   .v-icon {
     margin-right: 8px;
-    vertical-align: 0;
+    vertical-align: -2px;
   }
 
   svg {
