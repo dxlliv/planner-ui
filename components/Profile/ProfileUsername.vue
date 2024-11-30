@@ -32,6 +32,10 @@ withDefaults(
     font-size: 22px !important;
   }
 
+  &.text-subtitle-2 {
+    font-size: 18px !important;
+  }
+
   :deep(a) {
     position: absolute;
     top: 0;

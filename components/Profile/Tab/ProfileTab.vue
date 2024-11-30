@@ -55,6 +55,11 @@ defineProps<{
     vertical-align: 0;
   }
 
+  svg {
+    margin-right: 8px;
+    vertical-align: -6px;
+  }
+
   @media (max-width: 959px) {
     padding: 12px 25px;
 

@@ -15,6 +15,7 @@ export default {
     explore: 'Explore',
     support: 'Support',
     profile: 'Profile',
+    other: 'Other',
     save: 'Save',
   },
   profile: {

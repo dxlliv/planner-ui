@@ -7,7 +7,7 @@
     class="app-navigation-drawer"
     :permanent="$vuetify.display.smAndUp"
     :rail="$vuetify.display.mdAndDown"
-    :width="330"
+    :width="300"
     :rail-width="98"
   >
     <v-list density="compact" nav>

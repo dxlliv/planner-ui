@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="px-4 py-3">
+  <div class="pa-4">
     <v-row>
       <v-col class="flex-grow-0">
 
