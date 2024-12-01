@@ -30,3 +30,8 @@ a {
 .no-pointer-events {
   pointer-events: none;
 }
+
+.scrollbar-invisible {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

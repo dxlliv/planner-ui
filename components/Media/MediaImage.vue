@@ -11,3 +11,9 @@ defineProps<{
     :src="src"
   />
 </template>
+
+<style scoped lang="scss">
+.v-img {
+  pointer-events: none;
+}
+</style>

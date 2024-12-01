@@ -6,10 +6,10 @@ defineProps<{
 
 <template>
   <v-card class="app-post-detail app-post-detail--desktop bg-background" flat>
-    <v-row class="ma-0">
+    <v-row no-gutters>
       <v-col
         :class="[
-          'flex-grow-1 pa-0 app-post-detail__media',
+          'flex-grow-1 app-post-detail__media',
           { 'app-post-detail__media--reel': collection === 'reels' },
         ]"
         style="width: calc(100% - 385px)"
@@ -21,7 +21,7 @@ defineProps<{
       </v-col>
       <v-divider vertical />
       <v-col
-          class="flex-grow-0 pa-0"
+          class="flex-grow-0 relative"
           style="min-width: 385px !important;"
       >
         <div class="app-post-detail__interactions">
@@ -47,9 +47,18 @@ defineProps<{
     }
   }
 
+  .relative {
+    position: relative;
+  }
+
   &__interactions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: grid;
-    grid-auto-rows: 65px calc(80dvh - 65px - 123px - 60px) 123px 60px;
+    grid-auto-rows: 65px calc(100% - 65px - 114px - 60px) 114px 60px;
   }
 }
 </style>
