@@ -10,6 +10,11 @@
     :width="300"
     :rail-width="98"
   >
+
+    <v-list density="compact" nav class="app-navigation-drawer__header">
+      <slot name="header" />
+    </v-list>
+
     <v-list density="compact" nav>
       <slot />
     </v-list>
@@ -27,9 +32,16 @@
   display: grid;
   align-content: center;
 
+  &__header {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+  }
+
   &__actions {
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     right: 0;
   }
