@@ -1,6 +1,9 @@
 <script setup lang="ts">
 defineProps<{
-  stats: { count: number; text: string }[];
+  stats: {
+    count: string|number
+    text: string
+  }[];
   mobile?: boolean
 }>()
 </script>
