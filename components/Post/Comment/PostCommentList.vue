@@ -8,7 +8,6 @@
         <v-col align-self="center" v-text="$t('profile.post.comment.list.empty')" />
       </v-row>
     </slot>
-    <v-divider class="ma-0" />
   </div>
 </template>
 

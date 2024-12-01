@@ -49,7 +49,7 @@ defineProps<{
 
   &__interactions {
     display: grid;
-    grid-auto-rows: 65px calc(80dvh - 65px - 112px - 60px) 112px 60px;
+    grid-auto-rows: 65px calc(80dvh - 65px - 123px - 60px) 123px 60px;
   }
 }
 </style>
