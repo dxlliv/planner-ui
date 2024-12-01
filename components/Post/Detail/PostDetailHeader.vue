@@ -3,22 +3,25 @@
 </script>
 
 <template>
-  <div class="pa-4">
-    <v-row>
-      <v-col class="flex-grow-0">
+  <div>
+    <div class="pa-4">
+      <v-row>
+        <v-col class="flex-grow-0">
 
-        <slot name="avatar" />
+          <slot name="avatar" />
 
-      </v-col>
-      <v-col class="flex-grow-1 pl-1" align-self="center">
+        </v-col>
+        <v-col class="flex-grow-1 pl-1" align-self="center">
 
-        <slot name="username" />
+          <slot name="username" />
 
-      </v-col>
-      <v-col class="flex-grow-0">
-        <slot />
-      </v-col>
-    </v-row>
+        </v-col>
+        <v-col class="flex-grow-0">
+          <slot />
+        </v-col>
+      </v-row>
+    </div>
+    <v-divider class="ma-0" />
   </div>
 </template>
 

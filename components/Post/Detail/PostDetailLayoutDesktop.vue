@@ -5,21 +5,25 @@ defineProps<{
 </script>
 
 <template>
-  <v-card class="app-post-detail app-post-detail--desktop" flat>
+  <v-card class="app-post-detail app-post-detail--desktop bg-background" flat>
     <v-row class="ma-0">
       <v-col
-        :cols="6"
         :class="[
-          'pa-0 app-post-detail__media',
+          'flex-grow-1 pa-0 app-post-detail__media',
           { 'app-post-detail__media--reel': collection === 'reels' },
         ]"
+        style="width: calc(100% - 385px)"
         align-self="center"
       >
 
         <slot name="media" />
 
       </v-col>
-      <v-col :cols="6" class="pa-0">
+      <v-divider vertical />
+      <v-col
+          class="flex-grow-0 pa-0"
+          style="min-width: 385px !important;"
+      >
         <div class="app-post-detail__interactions">
 
           <slot name="detail" />
@@ -33,7 +37,8 @@ defineProps<{
 <style scoped lang="scss">
 .app-post-detail {
   border-radius: 4px !important;
-  min-height: 450px;
+  //min-height: 450px;
+  max-height: 80dvh;
 
   &__media {
     &--reel {
@@ -44,8 +49,7 @@ defineProps<{
 
   &__interactions {
     display: grid;
-    min-height: calc(100% - 2px);
-    grid-auto-rows: 64px auto 119px 56px;
+    grid-auto-rows: 65px calc(80dvh - 65px - 112px - 60px) 112px 60px;
   }
 }
 </style>
