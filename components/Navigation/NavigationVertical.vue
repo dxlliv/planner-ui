@@ -41,7 +41,7 @@
 
   &__actions {
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
     left: 0;
     right: 0;
   }

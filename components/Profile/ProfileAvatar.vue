@@ -18,5 +18,7 @@ withDefaults(
 </template>
 
 <style scoped lang="scss">
-
+:deep(img) {
+  pointer-events: none;
+}
 </style>
